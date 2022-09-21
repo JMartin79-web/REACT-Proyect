@@ -1,9 +1,15 @@
-import "./NavBar.css"
+import CardWidget from "./CartWidget/CartWidget";
+import { Logo, NavBarLink } from "./NavBarElement/NavBarElement";
 
-export default function NavBar(){
+
+export default function NavBar(props){
     return (
         <header>
-            <h1>"El NavBar está funcionando"</h1>
+            <Logo link="#"  texto="ROCKET SHOP"/>
+            <NavBarLink link="#" texto="Pokemons"/>
+            <NavBarLink link="#" texto="PlaceHolder"/>
+            <NavBarLink link="#" texto="PlaceHolder2"/>
+            <CardWidget link="#"/>
         </header>
     )
 }

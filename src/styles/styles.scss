@@ -1,0 +1,15 @@
+
+
+// BASE
+@import "./base/utilidades.scss";
+@import "./base/general.scss";
+
+// COMPONENTS
+
+    // NAVBAR
+    @import "./components/NavBar/NavBar.scss";
+        // NavBarElement
+        @import "./components/NavBar/NavBarElement/NavBarElement.scss";
+
+    // ITEM LIST CONTAINER
+    @import "./components/ItemListContainer/ItemListContainer.scss";
