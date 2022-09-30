@@ -2,25 +2,29 @@
 
 .displayCards{
     display: grid;
-    width: 100%;
+    padding: 5%;
+    width: 90%;
     grid-template-columns: repeat(3, 1fr);
 }
 .card{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 5%;
+    margin: 10%;
     border-radius: 5px;
     border: 5px solid $color-gris-claro;
     background-color: $color-gris-oscuro;
     img{
-        margin: auto;
-        width: 100%;
+        margin: 5px;
+        width: 80%;
         object-fit: cover;
     }
     div{
         width: 80%;
         margin: 1%;
+        padding: 10px;
+        h4{margin:0;}
+        p{margin: 0;}
     }
     
 }
