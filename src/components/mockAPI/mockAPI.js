@@ -1705,8 +1705,10 @@ const data = [
 
 export function getDatos(){
     
-    return new Promise((resolve) => {
-        setTimeout(()=> {resolve(data)} , 2000)
+    return new Promise((resolve, reject) => {
+        setTimeout(()=> {
+            resolve(data);
+        } , 2000)
         
     })
 }
