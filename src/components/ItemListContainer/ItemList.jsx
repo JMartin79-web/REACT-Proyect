@@ -1,7 +1,8 @@
 import React from 'react'
-import Card from "./Card/Card";
+import Card from "../Card/Card";
 
 export default function ItemList(props) {
+  console.log(props)
   return (
     <div className="displayCards">
         {props.datosList.map( (pokemon) => {
@@ -10,7 +11,7 @@ export default function ItemList(props) {
                 
                 <Card
                 key={pokemon.id}
-                precio= {`$ ${pokemon.price}`}
+                precio= {`$${pokemon.price}`}
                 name= {pokemon.name}
                 
                 src={pokemon.img}
