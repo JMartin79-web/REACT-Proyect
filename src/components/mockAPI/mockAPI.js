@@ -1855,23 +1855,43 @@ const data = [
 // MANDAR LOS DATOS
 
 export function getDatos(){
-    
-    return new Promise((resolve, reject) => {
-        setTimeout(()=> {
-            resolve(data);
-        } , 2000)
-        
-    })
+  
+  return new Promise((resolve, reject) => {
+      setTimeout(()=> {
+          resolve(data);
+      } , 2000)
+      
+  })
+}
+
+
+// MANDAR DATOS FILTRADOS
+export function getCategoryDatos(category){
+  let pokemonCategory = []
+  data.filter( (pokemon)=>{
+    pokemon.type.forEach( (tipo) => {
+      if(tipo.toLowerCase() == category){pokemonCategory.push(pokemon)}
+    }) 
+  })
+  
+  return new Promise((resolve, reject) => {
+      setTimeout(()=> {resolve(pokemonCategory);} , 2000)
+  })
 }
 
 
 // MANDAR UN SOLO DATO
-export function getDato(){
-    
-  return new Promise((resolve, reject) => {
-      setTimeout(()=> {
-          resolve(data[1]);
-      } , 2000)
-      
+export function getDato(id){
+  
+return new Promise((resolve, reject) => {
+
+  let pokemonId = data.find( (pokemon)=>{
+    return (pokemon.id === Number(id))
   })
+  console.log(pokemonId)
+    setTimeout(()=> {
+        resolve(pokemonId);
+    } , 2000)
+    
+})
 }

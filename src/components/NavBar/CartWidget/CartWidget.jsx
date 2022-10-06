@@ -8,6 +8,7 @@ import { faCartShopping }  from "@fortawesome/free-solid-svg-icons";
 export default function CardWidget(props){
     //console.log(iconList)
     return (
-    <a href={props.link}>Ver Carrito <FontAwesomeIcon icon={faCartShopping}/></a>
+        <p>Ver Carrito <FontAwesomeIcon icon={faCartShopping}/></p>
+    
     )
 }

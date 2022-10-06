@@ -1,0 +1,24 @@
+.itemcount{
+    display: flex;
+    align-items: center;
+    .itemcount__operaciones{
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        .itemcount-btn{
+            cursor: pointer;
+            color: $color-blanco;
+            text-align: center;
+            background-color: $color-rojo;
+            border: solid 1px $color-blanco;
+            
+            padding: 5px;
+            margin: 5px;
+            &:hover{
+                background-color: $color-rojo;
+                transform: scale(1.1);
+                transition: all .2s;
+            }
+        }
+    }
+}

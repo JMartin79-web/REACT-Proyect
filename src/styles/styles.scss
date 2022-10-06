@@ -8,8 +8,15 @@
 
     // NAVBAR
     @import "./components/NavBar/NavBar.scss";
-        // NavBarElement
-        @import "./components/NavBar/NavBarElement/NavBarElement.scss";
 
     // ITEM LIST CONTAINER
     @import "./components/ItemListContainer/ItemListContainer.scss";
+
+    // BUTTON
+    @import "./components/Button/Button.scss";
+
+    // ITEMCOUNT
+    @import "./components/ItemCount/ItemCount.scss";
+
+    // ITEMDETAILCONTAINER
+    @import "./components/ItemDetailContainer/ItemDetail.scss";

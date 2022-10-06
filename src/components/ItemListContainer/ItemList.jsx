@@ -10,6 +10,7 @@ export default function ItemList(props) {
             return(
                 
                 <Card
+                id={pokemon.id}
                 key={pokemon.id}
                 precio= {`$${pokemon.price}`}
                 name= {pokemon.name}

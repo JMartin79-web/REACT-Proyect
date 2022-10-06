@@ -1,0 +1,17 @@
+.btn{
+    cursor: pointer;
+    color: $color-blanco;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    background-color: $color-rojo;
+    border: solid 2px $color-blanco;
+    border-radius: 5px;
+    padding: 5% 10%;
+    margin: 5% 0%;
+    &:hover{
+        background-color: $color-rojo;
+        transform: scale(1.1);
+        transition: all .2s;
+    }
+}

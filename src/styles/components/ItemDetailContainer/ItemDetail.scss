@@ -1,0 +1,20 @@
+.itemdetail{
+    height: 90vh;
+    display: flex; justify-content: center; align-items: center;
+    .itemdetail-img{
+        img{width: 75%;}
+        display: flex; justify-content: center; align-items: center;
+        width: 30%;
+    }
+    .itemdetail-txt{
+        width: 40%;
+        .itemdetail-txt-h2{font-size: 3rem; font-weight: 800;}
+        .itemdetail-txt-precio{font-size: 1.5; font-weight: 600;}
+    }
+    .itemdetail-btn{
+        display: flex;
+        padding: 5%;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

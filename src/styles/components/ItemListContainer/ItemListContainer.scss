@@ -9,6 +9,7 @@
 .card{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     margin: 10%;
     border-radius: 5px;
@@ -20,11 +21,15 @@
         object-fit: cover;
     }
     div{
-        width: 80%;
+        width: 100%;
         margin: 1%;
         padding: 10px;
         h4{margin: 10px 0px; font-size: 1.2rem;}
         p{margin: 0;}
+    }
+    .card__info{
+        display: flex;
+        align-items: flex-end;
     }
     
 }
