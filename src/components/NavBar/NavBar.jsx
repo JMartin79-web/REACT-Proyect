@@ -16,7 +16,6 @@ export default function NavBar(props){
                 <Link to="/category/water"><p className="header__link">Agua</p></Link>
                 <Link to="/category/poison"><p className="header__link">Veneno</p></Link>
                 <Link to="/category/flying"><p className="header__link">Volador</p></Link>
-                <Link to="/category/flying"><p className="header__link">Volador</p></Link>
                 <Link to="/category/bug"><p className="header__link">Bicho</p></Link>
                 <Link to="/category/normal"><p className="header__link">Normal</p></Link>
                 <Link to="/category/electric"><p className="header__link">Eléctrico</p></Link>

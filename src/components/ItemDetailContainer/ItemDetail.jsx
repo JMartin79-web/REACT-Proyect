@@ -1,11 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Button from '../Button/Button'
 import ItemCount from '../ItemCount/ItemCount'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping }  from "@fortawesome/free-solid-svg-icons";
+
 
 function ItemDetail({pokemon}) {
     console.log(pokemon.stock)
+    const [count,setCount] = useState(0)
+
+
+    function handleOnAdd (count){
+        console.log("Agregaste al carrito "+ count )
+        setCount(count)
+      }
     return (
     <>
         <div className='itemdetail'>
@@ -17,9 +23,14 @@ function ItemDetail({pokemon}) {
                 <h2 className='itemdetail-txt-h2'>{pokemon.name}</h2>
                 <p className='itemdetail-txt-precio'>Precio: ${pokemon.price}</p>
                 <p>{pokemon.description}</p>
+                
                 <div className='itemdetail-btn'>
-                    <ItemCount stock={pokemon.stock} valorInicial={1}></ItemCount>
-                    <Button children={<FontAwesomeIcon icon={faCartShopping}/>}></Button>
+                    {count===0
+                    ? <ItemCount onAdd={handleOnAdd} stock={pokemon.stock} valorInicial={0}></ItemCount>
+                    
+                    : <Button children={"Ver carrito"}></Button>}
+                    
+                    
                 </div>
             </div>
             

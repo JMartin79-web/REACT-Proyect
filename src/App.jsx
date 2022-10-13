@@ -21,8 +21,12 @@ function App() {
         {/* DETALLE */}
         <Route path="/item/:id" element={<ItemDetailContainer/>}/>
         
+        {/* CRRITO 
+        <Route path="/cart" element={<Cart/>}/>*/}
+
         {/* ERROR 404 */}
         <Route path="*" element={ <Error></Error> }/>
+
       </Routes>
       
     </BrowserRouter>

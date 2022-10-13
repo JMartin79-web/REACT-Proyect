@@ -3,13 +3,10 @@ import { useState} from "react";
 
 function Button(props) {
     const [colorBtn,setColorBtn] = useState({ backgroundColor: "rgb(218, 46, 54)" })
-    
-    function handleClick() {
-        setColorBtn({ backgroundColor: "rgb(3, 121, 113)" });
-      }
 
+  function handleClick(){ if(props.onClick) {props.onClick()} }
   return (
-    <button style={colorBtn} className="btn">
+    <button onClick={handleClick} className="btn">
         {props.children}
     </button>
   )

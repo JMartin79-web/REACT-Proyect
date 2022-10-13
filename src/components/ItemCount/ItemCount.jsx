@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Button from "../Button/Button";
-
-function ItemCount({stock, valorInicial}) {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping }  from "@fortawesome/free-solid-svg-icons";
+function ItemCount({stock, valorInicial, onAdd}) {
     const menos = "-"
     const mas = "+"
 
@@ -10,20 +11,22 @@ function ItemCount({stock, valorInicial}) {
     function handleSubstract() {if (count > 1) {setCount(count - 1)} }
     function handleAdd() {if (count < stock) {setCount(count + 1)} }
 
+    
   return (
     <>
    
     <div className="itemcount">
       <div className="itemcount__operaciones">
-        <button onClick={handleAdd} children={mas} className="itemcount-btn"></button>
-        <button onClick={handleSubstract} children={menos} className="itemcount-btn"></button>
+        <Button onClick={handleAdd} children={mas} className="itemcount-btn"></Button>
+        <Button onClick={handleSubstract} children={menos} className="itemcount-btn"></Button>
       </div>
       
       <h3>{count}</h3>
     </div>
+    <Button onClick={ () => {onAdd(count)}} children={<FontAwesomeIcon icon={faCartShopping}/>}></Button>
     </>
     
-  )
+  ) 
 }
 export default ItemCount
 
