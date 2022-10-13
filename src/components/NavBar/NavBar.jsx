@@ -6,7 +6,7 @@ export default function NavBar(props){
     return (
         <header>
             <Link to="/"><h1>ROCKET SHOP</h1></Link>
-            <Link to="/"><CardWidget/></Link>
+            <Link to="/cart"><CardWidget/></Link>
             
             <h3>Filtrar por tipo</h3>
             <div>

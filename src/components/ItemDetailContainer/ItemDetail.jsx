@@ -1,15 +1,21 @@
 import React, {useState} from 'react'
 import Button from '../Button/Button'
 import ItemCount from '../ItemCount/ItemCount'
+import { Link } from "react-router-dom";
+
+
+// importar contexto
+import { useContext } from "react";
+import { cartContext } from '../../context/cartContext';
 
 
 function ItemDetail({pokemon}) {
     console.log(pokemon.stock)
     const [count,setCount] = useState(0)
-
+    const {addToCart} = useContext(cartContext)
 
     function handleOnAdd (count){
-        console.log("Agregaste al carrito "+ count )
+        addToCart(pokemon, count)
         setCount(count)
       }
     return (
@@ -28,7 +34,9 @@ function ItemDetail({pokemon}) {
                     {count===0
                     ? <ItemCount onAdd={handleOnAdd} stock={pokemon.stock} valorInicial={0}></ItemCount>
                     
-                    : <Button children={"Ver carrito"}></Button>}
+                    : <Link to="/cart"> <Button children={"Ver carrito"}></Button>
+                    </Link>}
+                    
                     
                     
                 </div>

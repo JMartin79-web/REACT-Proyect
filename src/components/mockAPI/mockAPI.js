@@ -1870,7 +1870,7 @@ export function getCategoryDatos(category){
   let pokemonCategory = []
   data.filter( (pokemon)=>{
     pokemon.type.forEach( (tipo) => {
-      if(tipo.toLowerCase() == category){pokemonCategory.push(pokemon)}
+      if(tipo.toLowerCase() === category){pokemonCategory.push(pokemon)}
     }) 
   })
   
