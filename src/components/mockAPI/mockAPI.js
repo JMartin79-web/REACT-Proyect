@@ -1868,7 +1868,7 @@ export function getDatos(){
 // MANDAR DATOS FILTRADOS
 export function getCategoryDatos(category){
   let pokemonCategory = []
-  data.filter( (pokemon)=>{
+  data.filter( (pokemon) => {
     pokemon.type.forEach( (tipo) => {
       if(tipo.toLowerCase() === category){pokemonCategory.push(pokemon)}
     }) 
@@ -1890,7 +1890,11 @@ return new Promise((resolve, reject) => {
   })
   console.log(pokemonId)
     setTimeout(()=> {
-        resolve(pokemonId);
+      if(pokemonId === undefined){
+        reject(new Error("Ha ocurrido un error"))
+      }
+      else{resolve(pokemonId);}
+        
     } , 2000)
     
 })

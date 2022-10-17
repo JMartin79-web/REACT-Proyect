@@ -31,6 +31,7 @@ function CartContextProvider(props){
     }
 
     function isInCart(id){
+        // usar some
         cart.find(item => (item.id === id))
 
     }

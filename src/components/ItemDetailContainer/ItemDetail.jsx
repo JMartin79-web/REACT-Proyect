@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 // importar contexto
 import { useContext } from "react";
 import { cartContext } from '../../context/cartContext';
+import Loader from '../Loader/Loader';
 
 
 function ItemDetail({pokemon}) {
@@ -18,6 +19,8 @@ function ItemDetail({pokemon}) {
         addToCart(pokemon, count)
         setCount(count)
       }
+
+    if(pokemon.stock)
     return (
     <>
         <div className='itemdetail'>
@@ -45,6 +48,9 @@ function ItemDetail({pokemon}) {
         </div>
         
     </>
+    )
+    return(
+        <Loader></Loader>
     )
 }
 

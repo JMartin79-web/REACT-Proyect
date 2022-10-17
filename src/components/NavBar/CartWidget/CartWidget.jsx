@@ -16,7 +16,7 @@ export default function CardWidget(props){
 
     return (
         <>
-            <p>Ver Carrito <FontAwesomeIcon icon={faCartShopping}/> { getTotalItemsCount()=== 0 ? "" : getTotalItemsCount()} </p>
+            <p>Ver Carrito <FontAwesomeIcon icon={faCartShopping}/> { getTotalItemsCount()> 0 && getTotalItemsCount()} </p>
             <p></p>
         </>
     )
