@@ -7,12 +7,23 @@ function CartContextProvider(props){
     const [cart, setCart] = useState([])
 
     function addToCart(item, count){
-        let newCart = [...cart]
-        let newItem = {...item, count}
-        newCart.push(newItem)
-        setCart(newCart)
+        if(isInCart(item.id)){
+            cart.map( (pokemon) => {
+                if(pokemon.id === item.id){ pokemon.count += count}
+            })
+            let newCart = [...cart]
+            setCart(newCart)
+        }
+        else{
+            let newCart = [...cart]
+            let newItem = {...item, count}
+            newCart.push(newItem)
+            setCart(newCart)
+        }
+        
     }
-
+    
+    
     function getTotalItemsCount(){
         let totalItemsCount = 0;
         cart.forEach(item =>{
@@ -20,7 +31,7 @@ function CartContextProvider(props){
         })
         return(totalItemsCount)
     }
-
+    
     function removeItem(idToRemove){
         let newCart = cart.filter( item => (item.id !== idToRemove ))
         setCart(newCart)
@@ -31,9 +42,8 @@ function CartContextProvider(props){
     }
 
     function isInCart(id){
-        // usar some
-        cart.find(item => (item.id === id))
-
+        let encontrado = cart.find(item => (item.id === id))
+        return encontrado
     }
 
     return(

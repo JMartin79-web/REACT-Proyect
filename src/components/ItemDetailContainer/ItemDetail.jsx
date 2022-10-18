@@ -11,7 +11,6 @@ import Loader from '../Loader/Loader';
 
 
 function ItemDetail({pokemon}) {
-    console.log(pokemon.stock)
     const [count,setCount] = useState(0)
     const {addToCart} = useContext(cartContext)
 
