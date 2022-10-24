@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import {useContext} from "react";
 import { cartContext } from '../../context/cartContext';
@@ -6,17 +6,16 @@ import { cartContext } from '../../context/cartContext';
 import { Link } from "react-router-dom";
 import run from "../assets/run.gif"
 import Button from "../Button/Button";
+import Form from '../Form/Form'
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan }  from "@fortawesome/free-solid-svg-icons";
-import { createBuyOrder } from "../../services/firebase";
+
 function Cart(){
     const { cart, clear, removeItem, getTotalPrice } = useContext(cartContext)
+    const [form,setForm] = useState(0)
 
-    function precioFinalHeader(){
-        getTotalPrice()
-    }
     function handleRemove(pokemonID){
         let pkmID = pokemonID
         removeItem(pkmID)
@@ -26,24 +25,8 @@ function Cart(){
         clear()
     }
 
-    function handleEnd(){
-        const buyerData = {
-            name: "asd",
-            email: "asdf",
-            phone: "asdfafd"
-        }
-
-        const order = {
-            buyerData: buyerData,
-            cart: cart,
-            total: getTotalPrice(),
-            date: new Date(),
-        }
-
-        createBuyOrder(order)
-
-    }
-
+    function crearForm(){setForm(1)}
+    
     if(cart[0])
 
     return(
@@ -51,14 +34,17 @@ function Cart(){
         <h1>CARRITO</h1>
 
         <div className="cart-header">
-            <h2>Precio final:</h2>
+            <h2>Precio final: {getTotalPrice()} </h2>
             <div className="cart-header-div">
-            <Button onClick={handleEnd} >Terminar compra</Button>
+            <Button onClick={crearForm}>Crear orden</Button>
             <Button onClick={handleRemoveAll} >Eliminar todos</Button>
             </div>
             
         </div>
-
+        {form === 1
+        ? <div> <Form cart={cart} getTotalPrice={getTotalPrice} handleRemoveAll={handleRemoveAll} ></Form> </div>
+        : <div></div>
+        }
         <div className="cart">
         
         

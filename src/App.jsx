@@ -9,11 +9,9 @@ import Error from "./components/Error/Error";
 import { Cart } from "./components/Cart/Cart";
 // import contexto
 import {CartContextProvider} from "./context/cartContext"
-// Firebase
-import FirebaseApp, { setDataToFirebase } from "./services/firebase";
+import Thankyou from "./components/Thankyou/Thankyou";
 
 
-// Esto es un componente
 function App() {
 
   return (
@@ -36,6 +34,9 @@ function App() {
         {/* CRRITO */}
         <Route path="/cart" element={<Cart/>}/>
 
+        {/* CRRITO */}
+        <Route path="/thankyou" element={<Thankyou/>}/>
+
         {/* ERROR 404 */}
         <Route path="*" element={ <Error></Error> }/>
 
@@ -47,6 +48,3 @@ function App() {
 }
 
 export default App;
-
-// <ItemDetailContainer/>
-//<ItemListContainer greeting="Bienvenidos"/>

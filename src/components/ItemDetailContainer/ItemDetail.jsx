@@ -33,6 +33,7 @@ function ItemDetail({pokemon}) {
                 <p>{pokemon.description}</p>
                 
                 <div className='itemdetail-btn'>
+                    
                     {count===0
                     ? <ItemCount onAdd={handleOnAdd} stock={pokemon.stock} valorInicial={0}></ItemCount>
                     

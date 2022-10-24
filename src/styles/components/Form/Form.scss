@@ -1,0 +1,24 @@
+.form{
+    background-color: $color-gris-oscuro;
+    padding: 2%;
+    .form-contenedor{
+        display: flex;
+        
+        label{color: $color-gris-claro;}
+        input{
+            color: $color-gris-claro;
+            background-color: $color-negro;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .form-div1, .form-div2{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+}

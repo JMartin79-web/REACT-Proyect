@@ -20,9 +20,9 @@ function CartContextProvider(props){
             newCart.push(newItem)
             setCart(newCart)
         }
-        
     }
     
+
     function getTotalPrice(){
         let precioFinal = 0;
         cart.forEach(item =>{
@@ -30,6 +30,7 @@ function CartContextProvider(props){
         })
         return precioFinal
     }
+
 
     function getTotalItemsCount(){
         let totalItemsCount = 0;
@@ -39,15 +40,16 @@ function CartContextProvider(props){
         return(totalItemsCount)
     }
     
+
     function removeItem(idToRemove){
         let newCart = cart.filter( item => (item.id !== idToRemove ))
         setCart(newCart)
     }
 
-    function clear(){
-        setCart([])
-    }
 
+    function clear(){ setCart([]) }
+
+    
     function isInCart(id){
         let encontrado = cart.find(item => (item.id === id))
         return encontrado

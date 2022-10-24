@@ -17,6 +17,7 @@ export default function ItemList(props) {
                 
                 src={pokemon.img}
                 alt= {pokemon.name}
+                stock={pokemon.stock}
                 />
             )
         })}

@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 
 // Obtén todos los documentos de una colección
-import { getFirestore, collection, doc, getDocs, getDoc, query, where, addDoc } from "firebase/firestore";
+import { getFirestore, collection, doc, getDocs, getDoc, query, orderBy, where, addDoc, writeBatch, documentId } from "firebase/firestore";
 import {} from "firebase/firestore";
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -23,11 +23,12 @@ const FirebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore(FirebaseApp);
 
 
-// MANDAR LOS DATOS
+// RECIBIR LOS DATOS
 
 export async function getDatos(){
     const collectionRef = collection(db, "pokemons")
-    let results = await getDocs(collectionRef)
+    const q = query(collectionRef, orderBy("idPkm"))
+    let results = await getDocs(q)
     
     let datos = results.docs.map( (doc)=>{
        return ({ id: doc.id, ...doc.data()})
@@ -36,11 +37,11 @@ export async function getDatos(){
 }
   
   
-  // MANDAR DATOS FILTRADOS
+  // RECIBIR DATOS FILTRADOS
   export async function getCategoryDatos(category){
     const collectionRef = collection(db, "pokemons");
     const queryCategory = query(
-        collectionRef,where("type", "array-contains", category)
+        collectionRef,where("type", "array-contains", category), orderBy("idPkm")
       );
     
       let results = await getDocs(queryCategory);
@@ -56,7 +57,7 @@ export async function getDatos(){
   }
   
   
-  // MANDAR UN SOLO DATO
+  // RECIBIR UN SOLO DATO
   export async function getDato(id){
     const docRef = doc(db, "pokemons", id);
     const docResult = await getDoc(docRef);
@@ -67,12 +68,28 @@ export async function getDatos(){
 
   // MANDAR ORDEN DE COMPRA
   export async function createBuyOrder(order){
+    const batch = writeBatch(db)
     const collectionRef = collection(db, "orders");
+    const collectionItemsRef = collection(db, "pokemons")
+
+    const arrayIds = order.cart.map( (item) => item.id )
+    const q = query(collectionItemsRef, where(documentId(), "in", arrayIds))
+    
+    let itemsToUpdate = await getDocs(q)
+    itemsToUpdate.docs.forEach( doc => {
+      let itemInCart = order.cart.find( item => item.id === doc.id)
+      batch.update(doc.ref, {
+        stock: doc.data().stock -= itemInCart.count
+      })
+    })
+    batch.commit()
     let respuesta = await addDoc(collectionRef, order)
     console.log(respuesta.id)
   }
 
+
   // MANDAR OBJETO A FIREBASE
+  /*
   async function setDataToFirebase(){
     const data = [
     
@@ -1933,6 +1950,6 @@ export async function getDatos(){
       console.log("documento creado:",newPkm.id)
     }
   }
-
+  */
 
   export default FirebaseApp
