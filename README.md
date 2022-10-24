@@ -23,14 +23,6 @@ Y mi mail: jmartinaguirre79@gmail.com
 https://app.netlify.com/sites/soft-speculoos-1a776b/deploys
 
 
-
-## Descripción
-A continuación se dará una breve descripción sobre la usabilidad del sitio.
-
-<img src="./src/components/assets/readme/sitio.png">
-
-
-
 ## Descripción
 A continuación se dará una breve descripción sobre la usabilidad del sitio.
 
