@@ -9,12 +9,13 @@ import Error from "./components/Error/Error";
 import { Cart } from "./components/Cart/Cart";
 // import contexto
 import {CartContextProvider} from "./context/cartContext"
-import FirebaseApp from "./services/firebase";
+// Firebase
+import FirebaseApp, { setDataToFirebase } from "./services/firebase";
 
 
 // Esto es un componente
 function App() {
-  console.log(FirebaseApp)
+
   return (
     <CartContextProvider>
     <BrowserRouter>

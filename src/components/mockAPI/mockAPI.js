@@ -1,7 +1,7 @@
 const data = [
     
         {
-          "id": 1,
+          "idPkm": 1,
           "num": "001",
           "name": "Bulbasaur",
           "stock": 10,
@@ -15,7 +15,7 @@ const data = [
         },
 
         {
-          "id": 2,
+          "idPkm": 2,
           "num": "002",
           "name": "Ivysaur",
           "stock": 10,
@@ -29,7 +29,7 @@ const data = [
         },
 
         {
-          "id": 3,
+          "idPkm": 3,
           "num": "003",
           "name": "Venusaur",
           "stock": 10,
@@ -43,7 +43,7 @@ const data = [
         },
 
         {
-          "id": 4,
+          "idPkm": 4,
           "num": "004",
           "name": "Charmander",
           "stock": 10,
@@ -56,7 +56,7 @@ const data = [
         },
 
         {
-          "id": 5,
+          "idPkm": 5,
           "num": "005",
           "name": "Charmeleon",
           "stock": 10,
@@ -69,7 +69,7 @@ const data = [
         }, 
 
         {
-          "id": 6,
+          "idPkm": 6,
           "num": "006",
           "name": "Charizard",
           "stock": 10,
@@ -83,7 +83,7 @@ const data = [
         }, 
         
         {
-          "id": 7,
+          "idPkm": 7,
           "num": "007",
           "name": "Squirtle",
           "stock": 10,
@@ -96,7 +96,7 @@ const data = [
         }, 
         
         {
-          "id": 8,
+          "idPkm": 8,
           "num": "008",
           "name": "Wartortle",
           "stock": 10,
@@ -109,7 +109,7 @@ const data = [
         }, 
         
         {
-          "id": 9,
+          "idPkm": 9,
           "num": "009",
           "name": "Blastoise",
           "stock": 10,
@@ -122,7 +122,7 @@ const data = [
         }, 
         
         {
-          "id": 10,
+          "idPkm": 10,
           "num": "010",
           "name": "Caterpie",
           "stock": 10,
@@ -135,7 +135,7 @@ const data = [
         }, 
         
         {
-          "id": 11,
+          "idPkm": 11,
           "num": "011",
           "name": "Metapod",
           "stock": 10,
@@ -148,7 +148,7 @@ const data = [
         }, 
         
         {
-          "id": 12,
+          "idPkm": 12,
           "num": "012",
           "name": "Butterfree",
           "stock": 10,
@@ -162,7 +162,7 @@ const data = [
         }, 
         
         {
-          "id": 13,
+          "idPkm": 13,
           "num": "013",
           "name": "Weedle",
           "stock": 10,
@@ -176,7 +176,7 @@ const data = [
         }, 
         
         {
-          "id": 14,
+          "idPkm": 14,
           "num": "014",
           "name": "Kakuna",
           "stock": 10,
@@ -190,7 +190,7 @@ const data = [
         }, 
         
         {
-          "id": 15,
+          "idPkm": 15,
           "num": "015",
           "name": "Beedrill",
           "stock": 10,
@@ -204,7 +204,7 @@ const data = [
         }, 
         
         {
-          "id": 16,
+          "idPkm": 16,
           "num": "016",
           "name": "Pidgey",
           "stock": 10,
@@ -218,7 +218,7 @@ const data = [
         }, 
         
         {
-          "id": 17,
+          "idPkm": 17,
           "num": "017",
           "name": "Pidgeotto",
           "stock": 10,
@@ -232,7 +232,7 @@ const data = [
         }, 
         
         {
-          "id": 18,
+          "idPkm": 18,
           "num": "018",
           "name": "Pidgeot",
           "stock": 10,
@@ -246,7 +246,7 @@ const data = [
         }, 
         
         {
-          "id": 19,
+          "idPkm": 19,
           "num": "019",
           "name": "Rattata",
           "stock": 10,
@@ -259,7 +259,7 @@ const data = [
         }, 
         
         {
-          "id": 20,
+          "idPkm": 20,
           "num": "020",
           "name": "Raticate",
           "stock": 10,
@@ -272,7 +272,7 @@ const data = [
         }, 
         
         {
-          "id": 21,
+          "idPkm": 21,
           "num": "021",
           "name": "Spearow",
           "stock": 10,
@@ -286,7 +286,7 @@ const data = [
         }, 
         
         {
-          "id": 22,
+          "idPkm": 22,
           "num": "022",
           "name": "Fearow",
           "stock": 10,
@@ -300,7 +300,7 @@ const data = [
         }, 
         
         {
-          "id": 23,
+          "idPkm": 23,
           "num": "023",
           "name": "Ekans",
           "stock": 10,
@@ -313,7 +313,7 @@ const data = [
         }, 
         
         {
-          "id": 24,
+          "idPkm": 24,
           "num": "024",
           "name": "Arbok",
           "stock": 10,
@@ -326,7 +326,7 @@ const data = [
         }, 
         
         {
-          "id": 25,
+          "idPkm": 25,
           "num": "025",
           "name": "Pikachu",
           "stock": 0,
@@ -339,7 +339,7 @@ const data = [
         }, 
         
         {
-          "id": 26,
+          "idPkm": 26,
           "num": "026",
           "name": "Raichu",
           "stock": 0,
@@ -352,7 +352,7 @@ const data = [
         }, 
         
         {
-          "id": 27,
+          "idPkm": 27,
           "num": "027",
           "name": "Sandshrew",
           "stock": 10,
@@ -365,7 +365,7 @@ const data = [
         }, 
         
         {
-          "id": 28,
+          "idPkm": 28,
           "num": "028",
           "name": "Sandslash",
           "stock": 10,
@@ -378,7 +378,7 @@ const data = [
         }, 
         
         {
-          "id": 29,
+          "idPkm": 29,
           "num": "029",
           "name": "Nidoran ♀ (Female)",
           "stock": 10,
@@ -391,7 +391,7 @@ const data = [
         }, 
         
         {
-          "id": 30,
+          "idPkm": 30,
           "num": "030",
           "name": "Nidorina",
           "stock": 10,
@@ -404,7 +404,7 @@ const data = [
         }, 
         
         {
-          "id": 31,
+          "idPkm": 31,
           "num": "031",
           "name": "Nidoqueen",
           "stock": 10,
@@ -418,7 +418,7 @@ const data = [
         }, 
         
         {
-          "id": 32,
+          "idPkm": 32,
           "num": "032",
           "name": "Nidoran ♂ (Male)",
           "stock": 10,
@@ -431,7 +431,7 @@ const data = [
         }, 
         
         {
-          "id": 33,
+          "idPkm": 33,
           "num": "033",
           "name": "Nidorino",
           "stock": 10,
@@ -444,7 +444,7 @@ const data = [
         }, 
         
         {
-          "id": 34,
+          "idPkm": 34,
           "num": "034",
           "name": "Nidoking",
           "stock": 10,
@@ -458,7 +458,7 @@ const data = [
         }, 
         
         {
-          "id": 35,
+          "idPkm": 35,
           "num": "035",
           "name": "Clefairy",
           "stock": 10,
@@ -471,7 +471,7 @@ const data = [
         }, 
         
         {
-          "id": 36,
+          "idPkm": 36,
           "num": "036",
           "name": "Clefable",
           "stock": 10,
@@ -484,7 +484,7 @@ const data = [
         }, 
         
         {
-          "id": 37,
+          "idPkm": 37,
           "num": "037",
           "name": "Vulpix",
           "stock": 10,
@@ -497,7 +497,7 @@ const data = [
         }, 
         
         {
-          "id": 38,
+          "idPkm": 38,
           "num": "038",
           "name": "Ninetales",
           "stock": 10,
@@ -510,7 +510,7 @@ const data = [
         }, 
         
         {
-          "id": 39,
+          "idPkm": 39,
           "num": "039",
           "name": "Jigglypuff",
           "stock": 10,
@@ -523,7 +523,7 @@ const data = [
         }, 
         
         {
-          "id": 40,
+          "idPkm": 40,
           "num": "040",
           "name": "Wigglytuff",
           "stock": 10,
@@ -536,7 +536,7 @@ const data = [
         },
         
         {
-          "id": 41,
+          "idPkm": 41,
           "num": "041",
           "name": "Zubat",
           "stock": 100,
@@ -550,7 +550,7 @@ const data = [
         }, 
         
         {
-          "id": 42,
+          "idPkm": 42,
           "num": "042",
           "name": "Golbat",
           "stock": 10,
@@ -564,7 +564,7 @@ const data = [
         }, 
         
         {
-          "id": 43,
+          "idPkm": 43,
           "num": "043",
           "name": "Oddish",
           "stock": 10,
@@ -578,7 +578,7 @@ const data = [
         }, 
         
         {
-          "id": 44,
+          "idPkm": 44,
           "num": "044",
           "name": "Gloom",
           "stock": 10,
@@ -592,7 +592,7 @@ const data = [
         }, 
         
         {
-          "id": 45,
+          "idPkm": 45,
           "num": "045",
           "name": "Vileplume",
           "stock": 10,
@@ -606,7 +606,7 @@ const data = [
         }, 
         
         {
-          "id": 46,
+          "idPkm": 46,
           "num": "046",
           "name": "Paras",
           "stock": 10,
@@ -620,7 +620,7 @@ const data = [
         },
         
         {
-          "id": 47,
+          "idPkm": 47,
           "num": "047",
           "name": "Parasect",
           "stock": 10,
@@ -634,7 +634,7 @@ const data = [
         }, 
         
         {
-          "id": 48,
+          "idPkm": 48,
           "num": "048",
           "name": "Venonat",
           "stock": 10,
@@ -648,7 +648,7 @@ const data = [
         }, 
         
         {
-          "id": 49,
+          "idPkm": 49,
           "num": "049",
           "name": "Venomoth",
           "stock": 10,
@@ -662,7 +662,7 @@ const data = [
         }, 
         
         {
-          "id": 50,
+          "idPkm": 50,
           "num": "050",
           "name": "Diglett",
           "stock": 10,
@@ -675,7 +675,7 @@ const data = [
         }, 
         
         {
-          "id": 51,
+          "idPkm": 51,
           "num": "051",
           "name": "Dugtrio",
           "stock": 10,
@@ -688,7 +688,7 @@ const data = [
         },
         
         {
-          "id": 52,
+          "idPkm": 52,
           "num": "052",
           "name": "Meowth",
           "stock": 10,
@@ -701,7 +701,7 @@ const data = [
         }, 
         
         {
-          "id": 53,
+          "idPkm": 53,
           "num": "053",
           "name": "Persian",
           "stock": 10,
@@ -714,7 +714,7 @@ const data = [
         }, 
         
         {
-          "id": 54,
+          "idPkm": 54,
           "num": "054",
           "name": "Psyduck",
           "stock": 10,
@@ -727,7 +727,7 @@ const data = [
         }, 
         
         {
-          "id": 55,
+          "idPkm": 55,
           "num": "055",
           "name": "Golduck",
           "stock": 10,
@@ -740,7 +740,7 @@ const data = [
         }, 
         
         {
-          "id": 56,
+          "idPkm": 56,
           "num": "056",
           "name": "Mankey",
           "stock": 10,
@@ -753,7 +753,7 @@ const data = [
         }, 
         
         {
-          "id": 57,
+          "idPkm": 57,
           "num": "057",
           "name": "Primeape",
           "stock": 10,
@@ -764,7 +764,7 @@ const data = [
             "fighting"
           ]
         }, {
-          "id": 58,
+          "idPkm": 58,
           "num": "058",
           "name": "Growlithe",
           "stock": 10,
@@ -775,7 +775,7 @@ const data = [
             "fire"
           ]
         }, {
-          "id": 59,
+          "idPkm": 59,
           "num": "059",
           "name": "Arcanine",
           "stock": 10,
@@ -786,7 +786,7 @@ const data = [
             "fire"
           ]
         }, {
-          "id": 60,
+          "idPkm": 60,
           "num": "060",
           "name": "Poliwag",
           "stock": 10,
@@ -797,7 +797,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 61,
+          "idPkm": 61,
           "num": "061",
           "name": "Poliwhirl",
           "stock": 10,
@@ -808,7 +808,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 62,
+          "idPkm": 62,
           "num": "062",
           "name": "Poliwrath",
           "stock": 10,
@@ -820,7 +820,7 @@ const data = [
             "fighting"
           ]
         }, {
-          "id": 63,
+          "idPkm": 63,
           "num": "063",
           "name": "Abra",
           "stock": 10,
@@ -831,7 +831,7 @@ const data = [
             "psychic"
           ]
         }, {
-          "id": 64,
+          "idPkm": 64,
           "num": "064",
           "name": "Kadabra",
           "stock": 10,
@@ -842,7 +842,7 @@ const data = [
             "psychic"
           ]
         }, {
-          "id": 65,
+          "idPkm": 65,
           "num": "065",
           "name": "Alakazam",
           "stock": 10,
@@ -853,7 +853,7 @@ const data = [
             "psychic"
           ]
         }, {
-          "id": 66,
+          "idPkm": 66,
           "num": "066",
           "name": "Machop",
           "stock": 10,
@@ -864,7 +864,7 @@ const data = [
             "fighting"
           ]
         }, {
-          "id": 67,
+          "idPkm": 67,
           "num": "067",
           "name": "Machoke",
           "stock": 10,
@@ -875,7 +875,7 @@ const data = [
             "fighting"
           ]
         }, {
-          "id": 68,
+          "idPkm": 68,
           "num": "068",
           "name": "Machamp",
           "stock": 10,
@@ -886,7 +886,7 @@ const data = [
             "fighting"
           ]
         }, {
-          "id": 69,
+          "idPkm": 69,
           "num": "069",
           "name": "Bellsprout",
           "stock": 10,
@@ -898,7 +898,7 @@ const data = [
             "poison"
           ]
         }, {
-          "id": 70,
+          "idPkm": 70,
           "num": "070",
           "name": "Weepinbell",
           "stock": 10,
@@ -910,7 +910,7 @@ const data = [
             "poison"
           ]
         }, {
-          "id": 71,
+          "idPkm": 71,
           "num": "071",
           "name": "Victreebel",
           "stock": 10,
@@ -922,7 +922,7 @@ const data = [
             "poison"
           ]
         }, {
-          "id": 72,
+          "idPkm": 72,
           "num": "072",
           "name": "Tentacool",
           "stock": 60,
@@ -934,7 +934,7 @@ const data = [
             "poison"
           ]
         }, {
-          "id": 73,
+          "idPkm": 73,
           "num": "073",
           "name": "Tentacruel",
           "stock": 30,
@@ -946,7 +946,7 @@ const data = [
             "poison"
           ]
         }, {
-          "id": 74,
+          "idPkm": 74,
           "num": "074",
           "name": "Geodude",
           "stock": 10,
@@ -958,7 +958,7 @@ const data = [
             "ground"
           ]
         }, {
-          "id": 75,
+          "idPkm": 75,
           "num": "075",
           "name": "Graveler",
           "stock": 20,
@@ -970,7 +970,7 @@ const data = [
             "ground"
           ]
         }, {
-          "id": 76,
+          "idPkm": 76,
           "num": "076",
           "name": "Golem",
           "stock": 10,
@@ -982,7 +982,7 @@ const data = [
             "ground"
           ]
         }, {
-          "id": 77,
+          "idPkm": 77,
           "num": "077",
           "name": "Ponyta",
           "stock": 10,
@@ -993,7 +993,7 @@ const data = [
             "fire"
           ]
         }, {
-          "id": 78,
+          "idPkm": 78,
           "num": "078",
           "name": "Rapidash",
           "stock": 10,
@@ -1004,7 +1004,7 @@ const data = [
             "fire"
           ]
         }, {
-          "id": 79,
+          "idPkm": 79,
           "num": "079",
           "name": "Slowpoke",
           "stock": 10,
@@ -1016,7 +1016,7 @@ const data = [
             "psychic"
           ]
         }, {
-          "id": 80,
+          "idPkm": 80,
           "num": "080",
           "name": "Slowbro",
           "stock": 10,
@@ -1028,7 +1028,7 @@ const data = [
             "psychic"
           ]
         }, {
-          "id": 81,
+          "idPkm": 81,
           "num": "081",
           "name": "Magnemite",
           "stock": 10,
@@ -1039,7 +1039,7 @@ const data = [
             "electric"
           ]
         }, {
-          "id": 82,
+          "idPkm": 82,
           "num": "082",
           "name": "Magneton",
           "stock": 10,
@@ -1050,7 +1050,7 @@ const data = [
             "electric"
           ]
         }, {
-          "id": 83,
+          "idPkm": 83,
           "num": "083",
           "name": "Farfetch'd",
           "stock": 10,
@@ -1062,7 +1062,7 @@ const data = [
             "flying"
           ]
         }, {
-          "id": 84,
+          "idPkm": 84,
           "num": "084",
           "name": "Doduo",
           "stock": 10,
@@ -1074,7 +1074,7 @@ const data = [
             "flying"
           ]
         }, {
-          "id": 85,
+          "idPkm": 85,
           "num": "085",
           "name": "Dodrio",
           "stock": 10,
@@ -1086,7 +1086,7 @@ const data = [
             "flying"
           ]
         }, {
-          "id": 86,
+          "idPkm": 86,
           "num": "086",
           "name": "Seel",
           "stock": 10,
@@ -1097,7 +1097,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 87,
+          "idPkm": 87,
           "num": "087",
           "name": "Dewgong",
           "stock": 10,
@@ -1109,7 +1109,7 @@ const data = [
             "ice"
           ]
         }, {
-          "id": 88,
+          "idPkm": 88,
           "num": "088",
           "name": "Grimer",
           "stock": 10,
@@ -1120,7 +1120,7 @@ const data = [
             "poison"
           ]
         }, {
-          "id": 89,
+          "idPkm": 89,
           "num": "089",
           "name": "Muk",
           "stock": 10,
@@ -1131,7 +1131,7 @@ const data = [
             "poison"
           ]
         }, {
-          "id": 90,
+          "idPkm": 90,
           "num": "090",
           "name": "Shellder",
           "stock": 10,
@@ -1142,7 +1142,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 91,
+          "idPkm": 91,
           "num": "091",
           "name": "Cloyster",
           "stock": 10,
@@ -1154,7 +1154,7 @@ const data = [
             "ice"
           ]
         }, {
-          "id": 92,
+          "idPkm": 92,
           "num": "092",
           "name": "Gastly",
           "stock": 10,
@@ -1166,7 +1166,7 @@ const data = [
             "poison"
           ]
         }, {
-          "id": 93,
+          "idPkm": 93,
           "num": "093",
           "name": "Haunter",
           "stock": 10,
@@ -1178,7 +1178,7 @@ const data = [
             "poison"
           ]
         }, {
-          "id": 94,
+          "idPkm": 94,
           "num": "094",
           "name": "Gengar",
           "stock": 10,
@@ -1190,7 +1190,7 @@ const data = [
             "poison"
           ]
         }, {
-          "id": 95,
+          "idPkm": 95,
           "num": "095",
           "name": "Onix",
           "stock": 10,
@@ -1202,7 +1202,7 @@ const data = [
             "ground"
           ]
         }, {
-          "id": 96,
+          "idPkm": 96,
           "num": "096",
           "name": "Drowzee",
           "stock": 10,
@@ -1213,7 +1213,7 @@ const data = [
             "psychic"
           ]
         }, {
-          "id": 97,
+          "idPkm": 97,
           "num": "097",
           "name": "Hypno",
           "stock": 10,
@@ -1224,7 +1224,7 @@ const data = [
             "psychic"
           ]
         }, {
-          "id": 98,
+          "idPkm": 98,
           "num": "098",
           "name": "Krabby",
           "stock": 10,
@@ -1235,7 +1235,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 99,
+          "idPkm": 99,
           "num": "099",
           "name": "Kingler",
           "stock": 10,
@@ -1246,7 +1246,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 100,
+          "idPkm": 100,
           "num": "100",
           "name": "Voltorb",
           "stock": 10,
@@ -1257,7 +1257,7 @@ const data = [
             "electric"
           ]
         }, {
-          "id": 101,
+          "idPkm": 101,
           "num": "101",
           "name": "Electrode",
           "stock": 10,
@@ -1268,7 +1268,7 @@ const data = [
             "electric"
           ]
         }, {
-          "id": 102,
+          "idPkm": 102,
           "num": "102",
           "name": "Exeggcute",
           "stock": 10,
@@ -1282,7 +1282,7 @@ const data = [
         }, 
         
         {
-          "id": 103,
+          "idPkm": 103,
           "num": "103",
           "name": "Exeggutor",
           "stock": 10,
@@ -1296,7 +1296,7 @@ const data = [
         },
         
         {
-          "id": 104,
+          "idPkm": 104,
           "num": "104",
           "name": "Cubone",
           "stock": 10,
@@ -1309,7 +1309,7 @@ const data = [
         },
         
         {
-          "id": 105,
+          "idPkm": 105,
           "num": "105",
           "name": "Marowak",
           "stock": 0,
@@ -1322,7 +1322,7 @@ const data = [
         },
         
         {
-          "id": 106,
+          "idPkm": 106,
           "num": "106",
           "name": "Hitmonlee",
           "stock": 10,
@@ -1335,7 +1335,7 @@ const data = [
         },
         
         {
-          "id": 107,
+          "idPkm": 107,
           "num": "107",
           "name": "Hitmonchan",
           "stock": 10,
@@ -1348,7 +1348,7 @@ const data = [
         }, 
         
         {
-          "id": 108,
+          "idPkm": 108,
           "num": "108",
           "name": "Lickitung",
           "stock": 10,
@@ -1359,7 +1359,7 @@ const data = [
             "normal"
           ]
         }, {
-          "id": 109,
+          "idPkm": 109,
           "num": "109",
           "name": "Koffing",
           "stock": 10,
@@ -1370,7 +1370,7 @@ const data = [
             "poison"
           ]
         }, {
-          "id": 110,
+          "idPkm": 110,
           "num": "110",
           "name": "Weezing",
           "stock": 10,
@@ -1381,7 +1381,7 @@ const data = [
             "poison"
           ]
         }, {
-          "id": 111,
+          "idPkm": 111,
           "num": "111",
           "name": "Rhyhorn",
           "stock": 10,
@@ -1393,7 +1393,7 @@ const data = [
             "rock"
           ]
         }, {
-          "id": 112,
+          "idPkm": 112,
           "num": "112",
           "name": "Rhydon",
           "stock": 10,
@@ -1405,7 +1405,7 @@ const data = [
             "rock"
           ]
         }, {
-          "id": 113,
+          "idPkm": 113,
           "num": "113",
           "name": "Chansey",
           "stock": 10,
@@ -1416,7 +1416,7 @@ const data = [
             "normal"
           ]
         }, {
-          "id": 114,
+          "idPkm": 114,
           "num": "114",
           "name": "Tangela",
           "stock": 10,
@@ -1427,7 +1427,7 @@ const data = [
             "grass"
           ]
         }, {
-          "id": 115,
+          "idPkm": 115,
           "num": "115",
           "name": "Kangaskhan",
           "stock": 10,
@@ -1438,7 +1438,7 @@ const data = [
             "normal"
           ]
         }, {
-          "id": 116,
+          "idPkm": 116,
           "num": "116",
           "name": "Horsea",
           "stock": 10,
@@ -1449,7 +1449,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 117,
+          "idPkm": 117,
           "num": "117",
           "name": "Seadra",
           "stock": 10,
@@ -1460,7 +1460,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 118,
+          "idPkm": 118,
           "num": "118",
           "name": "Goldeen",
           "stock": 10,
@@ -1471,7 +1471,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 119,
+          "idPkm": 119,
           "num": "119",
           "name": "Seaking",
           "stock": 10,
@@ -1482,7 +1482,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 120,
+          "idPkm": 120,
           "num": "120",
           "name": "Staryu",
           "stock": 10,
@@ -1493,7 +1493,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 121,
+          "idPkm": 121,
           "num": "121",
           "name": "Starmie",
           "stock": 10,
@@ -1505,7 +1505,7 @@ const data = [
             "psychic"
           ]
         }, {
-          "id": 122,
+          "idPkm": 122,
           "num": "122",
           "name": "Mr. Mime",
           "stock": 10,
@@ -1516,7 +1516,7 @@ const data = [
             "psychic"
           ]
         }, {
-          "id": 123,
+          "idPkm": 123,
           "num": "123",
           "name": "Scyther",
           "stock": 10,
@@ -1528,7 +1528,7 @@ const data = [
             "flying"
           ]
         }, {
-          "id": 124,
+          "idPkm": 124,
           "num": "124",
           "name": "Jynx",
           "stock": 10,
@@ -1540,7 +1540,7 @@ const data = [
             "psychic"
           ]
         }, {
-          "id": 125,
+          "idPkm": 125,
           "num": "125",
           "name": "Electabuzz",
           "stock": 10,
@@ -1551,7 +1551,7 @@ const data = [
             "electric"
           ]
         }, {
-          "id": 126,
+          "idPkm": 126,
           "num": "126",
           "name": "Magmar",
           "stock": 10,
@@ -1562,7 +1562,7 @@ const data = [
             "fire"
           ]
         }, {
-          "id": 127,
+          "idPkm": 127,
           "num": "127",
           "name": "Pinsir",
           "stock": 10,
@@ -1573,7 +1573,7 @@ const data = [
             "bug"
           ]
         }, {
-          "id": 128,
+          "idPkm": 128,
           "num": "128",
           "name": "Tauros",
           "stock": 10,
@@ -1584,7 +1584,7 @@ const data = [
             "normal"
           ]
         }, {
-          "id": 129,
+          "idPkm": 129,
           "num": "129",
           "name": "Magikarp",
           "stock": 10,
@@ -1595,7 +1595,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 130,
+          "idPkm": 130,
           "num": "130",
           "name": "Gyarados",
           "stock": 10,
@@ -1607,7 +1607,7 @@ const data = [
             "flying"
           ]
         }, {
-          "id": 131,
+          "idPkm": 131,
           "num": "131",
           "name": "Lapras",
           "stock": 10,
@@ -1619,7 +1619,7 @@ const data = [
             "ice"
           ]
         }, {
-          "id": 132,
+          "idPkm": 132,
           "num": "132",
           "name": "Ditto",
           "stock": 10,
@@ -1630,7 +1630,7 @@ const data = [
             "normal"
           ]
         }, {
-          "id": 133,
+          "idPkm": 133,
           "num": "133",
           "name": "Eevee",
           "stock": 10,
@@ -1641,7 +1641,7 @@ const data = [
             "normal"
           ]
         }, {
-          "id": 134,
+          "idPkm": 134,
           "num": "134",
           "name": "Vaporeon",
           "stock": 10,
@@ -1652,7 +1652,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 135,
+          "idPkm": 135,
           "num": "135",
           "name": "Jolteon",
           "stock": 10,
@@ -1663,7 +1663,7 @@ const data = [
             "electric"
           ]
         }, {
-          "id": 136,
+          "idPkm": 136,
           "num": "136",
           "name": "Flareon",
           "stock": 10,
@@ -1674,7 +1674,7 @@ const data = [
             "fire"
           ]
         }, {
-          "id": 137,
+          "idPkm": 137,
           "num": "137",
           "name": "Porygon",
           "stock": 10,
@@ -1685,7 +1685,7 @@ const data = [
             "normal"
           ]
         }, {
-          "id": 138,
+          "idPkm": 138,
           "num": "138",
           "name": "Omanyte",
           "stock": 10,
@@ -1697,7 +1697,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 139,
+          "idPkm": 139,
           "num": "139",
           "name": "Omastar",
           "stock": 10,
@@ -1709,7 +1709,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 140,
+          "idPkm": 140,
           "num": "140",
           "name": "Kabuto",
           "stock": 10,
@@ -1721,7 +1721,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 141,
+          "idPkm": 141,
           "num": "141",
           "name": "Kabutops",
           "stock": 10,
@@ -1733,7 +1733,7 @@ const data = [
             "water"
           ]
         }, {
-          "id": 142,
+          "idPkm": 142,
           "num": "142",
           "name": "Aerodactyl",
           "stock": 10,
@@ -1745,7 +1745,7 @@ const data = [
             "flying"
           ]
         }, {
-          "id": 143,
+          "idPkm": 143,
           "num": "143",
           "name": "Snorlax",
           "stock": 10,
@@ -1756,7 +1756,7 @@ const data = [
             "normal"
           ]
         }, {
-          "id": 144,
+          "idPkm": 144,
           "num": "144",
           "name": "Articuno",
           "stock": 0,
@@ -1768,7 +1768,7 @@ const data = [
             "flying"
           ]
         }, {
-          "id": 145,
+          "idPkm": 145,
           "num": "145",
           "name": "Zapdos",
           "stock": 0,
@@ -1780,7 +1780,7 @@ const data = [
             "flying"
           ]
         }, {
-          "id": 146,
+          "idPkm": 146,
           "num": "146",
           "name": "Moltres",
           "stock": 0,
@@ -1792,7 +1792,7 @@ const data = [
             "flying"
           ]
         }, {
-          "id": 147,
+          "idPkm": 147,
           "num": "147",
           "name": "Dratini",
           "stock": 10,
@@ -1803,7 +1803,7 @@ const data = [
             "dragon"
           ]
         }, {
-          "id": 148,
+          "idPkm": 148,
           "num": "148",
           "name": "Dragonair",
           "stock": 10,
@@ -1814,7 +1814,7 @@ const data = [
             "dragon"
           ]
         }, {
-          "id": 149,
+          "idPkm": 149,
           "num": "149",
           "name": "Dragonite",
           "stock": 10,
@@ -1826,7 +1826,7 @@ const data = [
             "flying"
           ]
         }, {
-          "id": 150,
+          "idPkm": 150,
           "num": "150",
           "name": "Mewtwo",
           "stock": 0,
@@ -1837,7 +1837,7 @@ const data = [
             "psychic"
           ]
         }, {
-          "id": 151,
+          "idPkm": 151,
           "num": "151",
           "name": "Mew",
           "stock": 0,

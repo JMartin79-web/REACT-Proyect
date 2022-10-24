@@ -19,7 +19,7 @@ function ItemDetail({pokemon}) {
         setCount(count)
       }
 
-    if(pokemon.stock)
+    if(pokemon.id)
     return (
     <>
         <div className='itemdetail'>

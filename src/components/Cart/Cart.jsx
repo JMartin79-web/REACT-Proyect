@@ -10,15 +10,12 @@ import Button from "../Button/Button";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan }  from "@fortawesome/free-solid-svg-icons";
+import { createBuyOrder } from "../../services/firebase";
 function Cart(){
-    const { cart, clear, removeItem } = useContext(cartContext)
+    const { cart, clear, removeItem, getTotalPrice } = useContext(cartContext)
 
     function precioFinalHeader(){
-        let precioFinalHeader = 0;
-        cart.forEach(item =>{
-            precioFinalHeader += (item.count * item.price)
-        })
-        return(precioFinalHeader)
+        getTotalPrice()
     }
     function handleRemove(pokemonID){
         let pkmID = pokemonID
@@ -30,7 +27,21 @@ function Cart(){
     }
 
     function handleEnd(){
-        console.log("Compra terminada")
+        const buyerData = {
+            name: "asd",
+            email: "asdf",
+            phone: "asdfafd"
+        }
+
+        const order = {
+            buyerData: buyerData,
+            cart: cart,
+            total: getTotalPrice(),
+            date: new Date(),
+        }
+
+        createBuyOrder(order)
+
     }
 
     if(cart[0])
@@ -40,7 +51,7 @@ function Cart(){
         <h1>CARRITO</h1>
 
         <div className="cart-header">
-            <h2>Precio final: {precioFinalHeader} </h2>
+            <h2>Precio final:</h2>
             <div className="cart-header-div">
             <Button onClick={handleEnd} >Terminar compra</Button>
             <Button onClick={handleRemoveAll} >Eliminar todos</Button>
@@ -56,7 +67,7 @@ function Cart(){
                 let precioTotal = pokemon.price * pokemon.count;
                 
                 return(
-                <div className="cart-card">
+                <div key={pokemon.id} className="cart-card">
 
                     <div className="card-div-img">
                         <img src= {pokemon.img} alt={`img-${pokemon.name}`} />
@@ -106,14 +117,3 @@ function Cart(){
 }
 
 export {Cart}
-
-/*
- return(
-        <>
-        {setCartVacio(true)}
-        <h1>CARRITO</h1>
-        <p>Tu carrito está vació.</p>
-        <p>Corré a llenarlo <img src= {run} alt="pikachu corriendo" /> </p>
-        </>
-    )
-*/
