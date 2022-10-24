@@ -23,7 +23,7 @@ function ItemCount({stock, valorInicial, onAdd}) {
       
       <h3>{count}</h3>
     </div>
-    <Button onClick={ () => {onAdd(count)}} children={<FontAwesomeIcon icon={faCartShopping}/>}></Button>
+    <Button onClick={ () => {onAdd(count)}} disabled={count===0 ? true : false} children={<FontAwesomeIcon icon={faCartShopping}/>}></Button>
     </>
     
   ) 
