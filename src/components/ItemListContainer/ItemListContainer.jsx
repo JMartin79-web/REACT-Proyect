@@ -14,7 +14,6 @@ export default function ItemListContainer(props){
     useEffect(
         () => {
             setdatosList([])
-            {/* cuando el category no esta definido, entonces significa que estamos en el directorio raíz */}
             if(categoryid===undefined){
                 console.log("Se obtuvieron los datos")
                 getDatos().then((respuesta) => {

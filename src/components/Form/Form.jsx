@@ -3,7 +3,6 @@ import { useState } from 'react'
 import Button from '../Button/Button'
 import InputForm from './InputForm'
 import { createBuyOrder } from "../../services/firebase";
-import {getTotalPrice} from "../../services/firebase"
 import { useNavigate } from 'react-router-dom';
 
 function Form({cart, getTotalPrice,handleRemoveAll}) {
