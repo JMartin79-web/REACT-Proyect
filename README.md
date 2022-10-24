@@ -13,7 +13,8 @@ Con este curso de React JS, termino la parte de front-end de la carrera de CODER
 
 Aparte de eso, estoy inscripto y cursando el programa del gobierno de la República Argentina llamado #SeProgramar, que consta de dos partes.  
 
-Te dejo mi  [LinkedIn](https://www.linkedin.com/in/martin-aguirre-a9a047198/), y mi [mail](jmartinaguirre79@gmail.com).
+Te dejo mi  [LinkedIn](https://www.linkedin.com/in/martin-aguirre-a9a047198/),  
+Y mi mail: jmartinaguirre79@gmail.com
 
 
 ## Ver sitio en vivo
