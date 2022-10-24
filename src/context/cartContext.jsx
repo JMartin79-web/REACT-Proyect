@@ -8,7 +8,7 @@ function CartContextProvider(props){
 
     function addToCart(item, count){
         if(isInCart(item.id)){
-            cart.map( (pokemon) => {
+            cart.forEach( (pokemon) => {
                 if(pokemon.id === item.id){ pokemon.count += count}
             })
             let newCart = [...cart]
@@ -49,7 +49,7 @@ function CartContextProvider(props){
 
     function clear(){ setCart([]) }
 
-    
+
     function isInCart(id){
         let encontrado = cart.find(item => (item.id === id))
         return encontrado
